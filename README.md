@@ -15,7 +15,7 @@
 #Verifique se o CLI foi instalado corretamente usando este comando 
 vue --version
 
-#Crie sua aplicação vue usando o comando "vue init --template --nome". Este template vc encontra no site do vue.js, neste caso #usarei o webpack-simple, então o comando ficará assim 
+#Crie sua aplicação vue usando o comando "vue init --template --nome". Este template vc encontra no site do vue.js, neste caso usarei o webpack-simple, então o comando ficará assim 
 vue init webpack-simple alura-vue
 
 # install dependencies
