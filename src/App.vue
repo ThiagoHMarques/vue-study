@@ -25,6 +25,9 @@ export default {
             }
           ]
       }
+  },
+  created(){
+      // buscaremos nossas fotos aqui
   }
 }
 </script>
