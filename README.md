@@ -21,9 +21,6 @@ vue init webpack-simple alura-vue
 # install dependencies
 npm install
 
-# Use o comando abaixo para baixar o modulo vue resource que não faz parte do core do vue, ele serve para fazer requisições para uma API externa.
-npm install vue-resource@1.0.3 --save
-
 # serve with hot reload at localhost:8080
 npm run dev
 
