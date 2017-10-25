@@ -14,20 +14,13 @@ export default {
   data() {
       return {
           titulo: 'Alurapic',
-          fotos: [
-            {
-                url: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwV4kVzT5McBdGSgqlVeRzubrNH_mOrrkKseDOGFURq20HmsrelEfMU7It',
-                titulo: 'Cachorro'
-            },
-            {
-                url: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwV4kVzT5McBdGSgqlVeRzubrNH_mOrrkKseDOGFURq20HmsrelEfMU7It',
-                titulo: 'Cachorrão'
-            }
-          ]
+          fotos: []
       }
   },
   created(){
-      // buscaremos nossas fotos aqui
+      this.$http.get("http://localhost:3000/v1/fotos")
+        .then(res => res.json())
+        .then(fotos => this.fotos = fotos, err => console.log(err));
   }
 }
 </script>
