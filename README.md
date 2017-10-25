@@ -6,20 +6,23 @@
 
 ``` bash
 
-#Para rodar o vue.js baixe o node.js versão LTS
+# Para rodar o vue.js baixe o node.js versão LTS
 
-#No visual code instale a view do vue.js: view->extensions procure por vue e instale o plugin do liuji-jim
+# No visual code instale a view do vue.js: view->extensions procure por vue e instale o plugin do liuji-jim
 
-#O vue.js tem um CLI (Command line interface). Para instala-lo entre no terminal do node.js em modo admin e execute este comando npm install vue-cli@2.7.0 -g
+# O vue.js tem um CLI (Command line interface). Para instala-lo entre no terminal do node.js em modo admin e execute este comando npm install vue-cli@2.7.0 -g
 
-#Verifique se o CLI foi instalado corretamente usando este comando 
+# Verifique se o CLI foi instalado corretamente usando este comando 
 vue --version
 
-#Crie sua aplicação vue usando o comando "vue init --template --nome". Este template vc encontra no site do vue.js, neste caso usarei o webpack-simple, então o comando ficará assim 
+# Crie sua aplicação vue usando o comando "vue init --template --nome". Este template vc encontra no site do vue.js, neste caso usarei o webpack-simple, então o comando ficará assim 
 vue init webpack-simple alura-vue
 
 # install dependencies
 npm install
+
+# Use o comando abaixo para baixar o modulo vue resource que não faz parte do core do vue, ele serve para fazer requisições para uma API externa.
+npm install vue-resource@1.0.3 --save
 
 # serve with hot reload at localhost:8080
 npm run dev
